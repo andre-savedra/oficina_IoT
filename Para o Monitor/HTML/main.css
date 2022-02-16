@@ -1,0 +1,75 @@
+.top-bar {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.btn-top-bar {
+    flex: 1 0 25%;
+    cursor: pointer;
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.btn-top-bar.active {
+    background: #cfcfcf;
+}
+
+
+.btn-top-bar:not(.active):hover {
+    background: #dddddd;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.name-rele {
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+.buttons-action {
+    display: flex;
+    gap: 6rem;
+}
+
+
+.btn-act {
+    font-size: 3.5rem;
+    padding: 1rem 2rem;
+    min-width: 176px;
+    min-height: 97px;
+    cursor: pointer;
+}
+
+.btn-act.on.active {
+    background: rgb(1, 206, 35);
+}
+
+.btn-act.on {
+    background: rgb(0, 126, 21);
+}
+
+.btn-act.off.active {
+    background: rgb(255, 28, 28);
+}
+
+.btn-act.off {
+    background: rgb(156, 0, 0);
+}
